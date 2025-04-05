@@ -42,7 +42,7 @@ export default function AboutUs() {
             <div className='absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg transform rotate-3'></div>
             <div className='absolute inset-0 bg-gray-800 rounded-lg transform -rotate-3 flex items-center justify-center overflow-hidden'>
               <Image
-                src='/cobancologne_02.webp'
+                src='./cobancologne_02.webp'
                 alt='Kölner Inklusionstaxi Service'
                 className='w-full h-full object-cover opacity-70'
                 width={500}

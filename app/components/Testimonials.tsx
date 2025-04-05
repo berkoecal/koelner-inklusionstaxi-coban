@@ -9,21 +9,21 @@ const testimonials = [
       "Kölner Inklusionstaxi hat mein Leben verändert. Dank ihres zuverlässigen Services kann ich wieder regelmäßig meine Therapietermine wahrnehmen.",
     author: "Maria Schmidt",
     position: "Stammkundin seit 2019",
-    image: "/person-1.jpeg",
+    image: "./person-1.jpeg",
   },
   {
     quote:
       "Als Pflegeheim schätzen wir die Professionalität und Pünktlichkeit vom Kölner Inklusionstaxi. Unsere Bewohner fühlen sich stets sicher und gut betreut.",
     author: "Alexandra Weber",
     position: "Leiterin Seniorenresidenz",
-    image: "/person-2.jpeg",
+    image: "./person-2.jpeg",
   },
   {
     quote:
       "Die Fahrer sind immer freundlich und hilfsbereit. Besonders beeindruckt hat mich, wie geduldig sie mit meinem Vater umgehen, der an Demenz leidet.",
     author: "Sabine Müller",
     position: "Angehörige",
-    image: "/person-3.jpeg",
+    image: "./person-3.jpeg",
   },
 ];
 

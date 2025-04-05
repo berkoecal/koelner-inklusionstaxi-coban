@@ -12,26 +12,28 @@ export default function ServiceHighlight() {
           transition={{ duration: 0.8 }}
           className='text-center'
         >
-          <h2 className='text-4xl sm:text-5xl md:text-6xl font-bold text-foreground mb-6'>
+          <h2 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 sm:mb-6'>
             Mobilität für Alle
           </h2>
-          <p className='text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto'>
+          <p className='text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto px-4'>
             Wir glauben, dass Mobilität ein Grundrecht ist. Unser Ziel ist es, Menschen mit
             Behinderungen die gleiche Freiheit und Unabhängigkeit zu ermöglichen wie allen anderen.
           </p>
           <motion.div
-            className='mt-10 flex justify-center gap-4'
+            className='mt-6 sm:mt-8 md:mt-10 flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 px-4'
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <a
               href='#contact'
-              className='apple-button inline-flex items-center bg-yellow-500 hover:bg-yellow-600 text-black'
+              className='apple-button inline-flex items-center justify-center bg-yellow-500 hover:bg-yellow-600 text-black text-xs sm:text-sm py-2 px-3 sm:px-4 rounded-md w-full sm:w-auto'
             >
-              Jetzt anfragen
+              <span className='text-xs sm:text-sm md:text-base whitespace-nowrap'>
+                Jetzt anfragen
+              </span>
               <svg
-                className='w-5 h-5 ml-2'
+                className='w-3 h-3 sm:w-4 sm:h-4 ml-1 sm:ml-2 flex-shrink-0'
                 fill='none'
                 stroke='currentColor'
                 viewBox='0 0 24 24'
@@ -47,11 +49,13 @@ export default function ServiceHighlight() {
             </a>
             <a
               href='tel:+4917622919053'
-              className='apple-button inline-flex items-center bg-yellow-500 hover:bg-yellow-600 text-black'
+              className='apple-button inline-flex items-center justify-center bg-yellow-500 hover:bg-yellow-600 text-black text-xs sm:text-sm py-2 px-3 sm:px-4 rounded-md w-full sm:w-auto'
             >
-              0176 22919053
+              <span className='text-xs sm:text-sm md:text-base whitespace-nowrap'>
+                0176 22919053
+              </span>
               <svg
-                className='w-5 h-5 ml-2'
+                className='w-3 h-3 sm:w-4 sm:h-4 ml-1 sm:ml-2 flex-shrink-0'
                 fill='none'
                 stroke='currentColor'
                 viewBox='0 0 24 24'

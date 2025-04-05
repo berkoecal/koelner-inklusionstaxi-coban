@@ -53,7 +53,7 @@ const ExtraServices = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className='order-2 md:order-1'
+            className='bg-gray-700 p-6 rounded-lg overflow-hidden'
           >
             <h3 className='text-3xl font-bold mb-4 text-white'>Mobilitätsunterstützung im Haus</h3>
             <p className='text-gray-300 mb-4'>
@@ -79,12 +79,13 @@ const ExtraServices = () => {
           </motion.div>
 
           <motion.div
-            className='relative h-96 order-1 md:order-2'
+            className='relative h-96 w-full max-w-full'
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <div className='absolute inset-0 bg-gray-800 rounded-lg flex items-center justify-center overflow-hidden'>
+            <div className='absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg transform rotate-3'></div>
+            <div className='absolute inset-0 bg-gray-800 rounded-lg transform -rotate-3 flex items-center justify-center overflow-hidden'>
               <div className='relative w-full h-full'>
                 {slides.map((slide, index) => (
                   <div
@@ -99,6 +100,7 @@ const ExtraServices = () => {
                       className='w-full h-full object-cover opacity-70'
                       width={500}
                       height={400}
+                      sizes='(max-width: 768px) 100vw, 50vw'
                     />
                   </div>
                 ))}

@@ -8,7 +8,7 @@ import type React from "react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Kölner Inklusionstaxi - Transport für Menschen mit Behinderungen",
+  title: "Kölner Rollstuhltaxi - Transport für Menschen mit Behinderungen",
   description: "Spezialisierter Taxiservice für Menschen mit Behinderungen in Köln und Umgebung",
   generator: "v0.dev",
 };

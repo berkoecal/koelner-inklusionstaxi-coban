@@ -20,13 +20,13 @@ import { toast } from "@/components/ui/use-toast";
 
 const formSchema = z.object({
   name: z.string().min(2, {
-    message: "Name must be at least 2 characters.",
+    message: "Name muss mindestens 2 Zeichen lang sein.",
   }),
   email: z.string().email({
-    message: "Please enter a valid email address.",
+    message: "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
   }),
   message: z.string().min(10, {
-    message: "Message must be at least 10 characters.",
+    message: "Nachricht muss mindestens 10 Zeichen lang sein.",
   }),
 });
 
@@ -74,7 +74,12 @@ export default function Contact() {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className='space-y-6'>
+            <form
+              action='https://formspree.io/f/xovekglw'
+              method='POST'
+              onSubmit={form.handleSubmit(onSubmit)}
+              className='space-y-6'
+            >
               <FormField
                 control={form.control}
                 name='name'

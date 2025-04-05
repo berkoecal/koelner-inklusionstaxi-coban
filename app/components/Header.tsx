@@ -75,10 +75,10 @@ export default function Header() {
       >
         <div className='flex lg:flex-1'>
           <Link href='/' className='-m-1.5 p-1.5'>
-            <span className='sr-only'>Kölner Inklusionstaxi</span>
+            <span className='sr-only'>Kölner Rollstuhltaxi</span>
             <div className='flex items-center'>
               <span className='text-xl font-bold text-yellow-500'>
-                Kölner <span className='text-blue-600'>Inklusionstaxi</span>
+                Kölner <span className='text-blue-600'>Rollstuhltaxi</span>
               </span>
             </div>
           </Link>

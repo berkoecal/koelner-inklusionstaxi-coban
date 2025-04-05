@@ -50,8 +50,8 @@ export default function ContactForm() {
       console.log(values);
       setIsSubmitting(false);
       form.reset();
-      alert("Thank you for your message. We'll get back to you soon!");
-    }, 2000);
+      alert("Vielen Dank für Ihre Nachricht. Wir melden uns schnellstmöglich bei Ihnen!");
+    }, 1000);
   }
 
   return (

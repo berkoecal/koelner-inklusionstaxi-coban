@@ -59,7 +59,7 @@ export default function Footer() {
         </div>
 
         <p className='mt-10 text-center text-sm leading-5 text-muted-foreground'>
-          &copy; {new Date().getFullYear()} Kölner Inklusionstaxi GmbH. Alle Rechte vorbehalten.
+          &copy; {new Date().getFullYear()} Kölner Rollstuhltaxi. Alle Rechte vorbehalten.
         </p>
       </div>
     </footer>

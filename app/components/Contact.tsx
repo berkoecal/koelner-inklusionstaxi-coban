@@ -49,8 +49,8 @@ export default function Contact() {
       console.log(values);
       setIsSubmitting(false);
       toast({
-        title: "Message sent!",
-        description: "We'll get back to you as soon as possible.",
+        title: "Nachricht gesendet!",
+        description: "Wir melden uns schnellstmöglich bei Ihnen.",
       });
       form.reset();
     }, 2000);

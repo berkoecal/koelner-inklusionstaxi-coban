@@ -83,6 +83,8 @@ export default function ContactForm() {
         >
           <Form {...form}>
             <form
+              action='https://formspree.io/f/xovekglw'
+              method='POST'
               onSubmit={form.handleSubmit(onSubmit)}
               className='space-y-6 bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700'
             >

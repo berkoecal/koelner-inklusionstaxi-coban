@@ -53,7 +53,7 @@ export default function Hero() {
           </motion.div>
         </div>
         <motion.div
-          className='mx-auto mt-16 lg:mt-0'
+          className='mx-auto mt-16 flex-1 lg:mt-0'
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
@@ -67,9 +67,9 @@ export default function Hero() {
               className='w-[500px] rounded-2xl shadow-xl ring-1 ring-gray-900/10'
             /> */}
 
-            <div className='w-[500px] rounded-2xl shadow-xl overflow-hidden ring-1 ring-gray-900/10'>
+            <div className='w-full md:w-[500px] lg:w-[600px] rounded-2xl shadow-xl overflow-hidden ring-1 ring-gray-900/10'>
               <iframe
-                width='550'
+                width='100%'
                 height='350'
                 src='https://www.youtube.com/embed/2aUXX_d4LBo'
                 title='Kölner Inklusionstaxi Video'

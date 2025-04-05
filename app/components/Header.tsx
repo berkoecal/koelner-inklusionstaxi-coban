@@ -204,7 +204,7 @@ export default function Header() {
       {/* Mobile Menu Overlay */}
       <div
         className={`absolute inset-0 top-full container flex h-[calc(100vh-76px)] flex-col transition-all duration-300 ease-in-out lg:hidden bg-background/95 backdrop-blur-md ${
-          isMenuOpen ? "visible translate-x-0 opacity-100" : "invisible translate-x-full opacity-0"
+          isMenuOpen ? "visible opacity-100" : "invisible opacity-0"
         }`}
       >
         <div className='mt-8 space-y-6 px-4'>

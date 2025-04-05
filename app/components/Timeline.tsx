@@ -168,17 +168,17 @@ function TimelineEvent({
         whileTap={{ scale: 0.95 }}
         onClick={onToggle}
       >
-        <div className='p-4 bg-background rounded-lg shadow-md border border-primary/10'>
+        <div className='p-4 bg-background rounded-lg shadow-md border border-primary/10 overflow-hidden'>
           <span className='font-bold text-primary'>{event.year}</span>
-          <h3 className='text-lg font-semibold mb-1'>{event.title}</h3>
-          <p className='text-muted-foreground'>{event.description}</p>
+          <h3 className='text-lg font-semibold mb-1 break-words'>{event.title}</h3>
+          <p className='text-muted-foreground break-words'>{event.description}</p>
           <motion.div
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: isExpanded ? "auto" : 0, opacity: isExpanded ? 1 : 0 }}
             transition={{ duration: 0.3 }}
             className='overflow-hidden'
           >
-            <p className='mt-2 text-sm text-muted-foreground'>{event.details}</p>
+            <p className='mt-2 text-sm text-muted-foreground break-words'>{event.details}</p>
           </motion.div>
         </div>
       </motion.div>

@@ -55,7 +55,9 @@ const ExtraServices = () => {
             transition={{ duration: 0.8 }}
             className='bg-gray-700 p-6 rounded-lg overflow-hidden'
           >
-            <h3 className='text-3xl font-bold mb-4 text-white'>Mobilitätsunterstützung im Haus</h3>
+            <h3 className='text-xl md:text-2xl font-bold mb-4 text-white'>
+              Mobilitätsunterstützung im Haus
+            </h3>
             <p className='text-gray-300 mb-4'>
               Wir verstehen, dass Transportbedürfnisse nicht immer an Ihrer Haustür enden. Deshalb
               bieten wir einen speziellen Service für Kunden mit Mobilitätseinschränkungen an.

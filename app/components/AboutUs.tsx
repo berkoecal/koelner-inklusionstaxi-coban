@@ -21,11 +21,23 @@ export default function AboutUs() {
             transition={{ duration: 0.8 }}
           >
             <h3 className='text-3xl font-bold mb-4 text-white'>Wir sind für Sie da</h3>
-            <p className='text-gray-300 mb-6'>
+            {/* <p className='text-gray-300 mb-6'>
               Bei Kölner Inklusionstaxi steht Ihre Mobilität an erster Stelle. Seit über 15 Jahren
               bieten wir spezialisierten Transportservice für Menschen mit Behinderungen und
               eingeschränkter Mobilität an. Unser Team aus geschulten Fahrern und Begleitpersonen
               sorgt für einen sicheren und komfortablen Transport.
+            </p> */}
+            <p className='text-gray-300 mb-6'>
+              Wir bieten das erste Inklusionstaxi in Köln an. Seit 2016 finden Sie mit uns ein
+              einfühlsames, vertrauensvolles und auf den Inklusionsgedanken voll eingestelltes, echt
+              kölsches Unternehmen. Hier stehen Sie mit Ihren Bedürfnissen im Vordergrund. Der Chef
+              Ibrahim Coban, ne echt Kölsche Jung mit Migrationshintergrund, steht Ihnen gut gelaunt
+              mit Rat und Tat zur Seite, egal, wo ihr Fahrtziel liegt. Er ist seit 10 Jahren
+              passionierter Taxifahrer und schätzt den Umgang mit Menschen. Der Inklusionsgedanke
+              ist für ihn eine Berufung. Um seine Kompentenz in diesem Bereich zu
+              professionalisieren, hat er im Oktober 2021 an einer Schulung der BG Verkehr
+              teilgenommen, bei der es um den Arbeitsschutz bei der Beförderung
+              mobilitätseingeschränkter Personen ging.
             </p>
             <p className='text-gray-300'>
               Mit unserer modernen Fahrzeugflotte, die mit Rampen, Liften und speziellen

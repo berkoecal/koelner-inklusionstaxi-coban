@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Instagram, Facebook, X } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -25,6 +26,38 @@ export default function Footer() {
             </div>
           ))}
         </nav>
+
+        {/* Social Media Icons */}
+        <div className='mt-8 flex justify-center space-x-6'>
+          <Link
+            href='https://instagram.com/kolner_inklusionstaxi'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='text-muted-foreground hover:text-foreground'
+          >
+            <span className='sr-only'>Instagram</span>
+            <Instagram className='h-6 w-6' />
+          </Link>
+          <Link
+            href='https://facebook.com/kolnerinklusionstaxi'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='text-muted-foreground hover:text-foreground'
+          >
+            <span className='sr-only'>Facebook</span>
+            <Facebook className='h-6 w-6' />
+          </Link>
+          <Link
+            href='https://x.com/kolnerinklusion'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='text-muted-foreground hover:text-foreground'
+          >
+            <span className='sr-only'>X</span>
+            <X className='h-6 w-6' />
+          </Link>
+        </div>
+
         <p className='mt-10 text-center text-sm leading-5 text-muted-foreground'>
           &copy; {new Date().getFullYear()} Kölner Inklusionstaxi GmbH. Alle Rechte vorbehalten.
         </p>

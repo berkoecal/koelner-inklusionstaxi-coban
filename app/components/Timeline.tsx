@@ -5,48 +5,50 @@ import { motion, useScroll, useTransform, useSpring, useInView } from "framer-mo
 
 const timelineEvents = [
   {
-    year: 2008,
-    title: "Gründung von Kölner Inklusionstaxi",
+    year: 2016,
+    title: "Gründung von Taxi Coban",
     description:
-      "Beginn unserer Mission für barrierefreie Mobilität mit zwei spezialisierten Fahrzeugen.",
+      "Start des ersten Inklusionstaxis in Köln mit dem Fokus auf einfühlsamen und vertrauensvollen Service.",
     details:
-      "Gegründet von Michael Weber, einem ehemaligen Krankenpfleger, der die Transportprobleme von Menschen mit Behinderungen aus erster Hand erlebte und eine Lösung schaffen wollte.",
-  },
-  {
-    year: 2012,
-    title: "Erweiterung der Flotte",
-    description: "Ausbau auf 10 Fahrzeuge und Einstellung von speziell geschultem Personal.",
-    details:
-      "Mit der steigenden Nachfrage erweiterten wir unsere Flotte und entwickelten ein umfassendes Schulungsprogramm für unsere Fahrer, um höchste Qualitätsstandards zu gewährleisten.",
-  },
-  {
-    year: 2015,
-    title: "Einführung der 24/7-Verfügbarkeit",
-    description: "Start des Rund-um-die-Uhr-Services für Notfälle und dringende Transporte.",
-    details:
-      "Als Reaktion auf die Bedürfnisse unserer Kunden haben wir einen 24-Stunden-Dienst eingerichtet, der auch nachts und an Wochenenden zuverlässige Transporte garantiert.",
+      "Seit 2016 bietet Taxi Coban als erstes Inklusionstaxi in Köln einen auf den Inklusionsgedanken voll eingestellten Service. Gegründet von Ibrahim Coban, einem echten Kölschen Jung mit Migrationshintergrund, der seit 10 Jahren als passionierter Taxifahrer tätig ist.",
   },
   {
     year: 2018,
-    title: "Digitale Buchungsplattform",
-    description:
-      "Einführung unserer benutzerfreundlichen Online-Buchungsplattform und mobilen App.",
+    title: "Erweiterung des Serviceangebots",
+    description: "Einführung zusätzlicher Alltagshilfen wie Einkaufs- und Medikamentenservice.",
     details:
-      "Mit unserer barrierefreien Buchungsplattform haben wir den Buchungsprozess vereinfacht und für alle zugänglich gemacht, inklusive Sprachsteuerung und Screenreader-Kompatibilität.",
+      "Um den oft anstrengenden Alltag für Kunden so angenehm wie möglich zu gestalten, wurden neben den Personenfahrten auch andere Dienstleistungen wie das Abholen von Einkäufen oder Medikamenten ins Angebot aufgenommen.",
+  },
+  {
+    year: 2019,
+    title: "Anschaffung des VW-Caddy Maxi",
+    description: "Investition in ein neues, TÜV-geprüftes Fahrzeug für barrierefreie Mobilität.",
+    details:
+      "Einführung eines speziell ausgestatteten VW-Caddy Maxi, der für jede Art von Rollstuhl geeignet ist und nach neuesten Sicherheitsstandards ausgestattet wurde. Das Fahrzeug kann flexibel als Siebensitzer oder mit vier Plätzen plus Rollstuhl genutzt werden.",
   },
   {
     year: 2020,
-    title: "Zertifizierung für medizinische Transporte",
-    description: "Erhalt der Zertifizierung für spezialisierte medizinische Beförderungen.",
+    title: "Kooperationen mit lokalen Organisationen",
+    description:
+      "Beginn der Zusammenarbeit mit dem Bürgerverein Kölner Eigelstein e.V. und dem Sozialverband SOVD.",
     details:
-      "Nach umfangreicher Schulung unseres Personals und Aufrüstung unserer Fahrzeuge erhielten wir die offizielle Zertifizierung für medizinische Transporte, einschließlich Dialysefahrten und Beförderungen von Intensivpatienten.",
+      "Durch strategische Partnerschaften mit dem Bürgerverein Kölner Eigelstein e.V. und dem Sozialverband SOVD konnte das Netzwerk erweitert und mehr Menschen mit Mobilitätseinschränkungen erreicht werden.",
   },
   {
-    year: 2023,
-    title: "Expansion in weitere Städte",
-    description: "Ausweitung unseres Services auf fünf weitere Großstädte in Deutschland.",
+    year: 2021,
+    title: "Professionalisierung durch Spezialschulung",
+    description:
+      "Teilnahme an einer Schulung der BG Verkehr zum Arbeitsschutz bei der Beförderung mobilitätseingeschränkter Personen.",
     details:
-      "Mit der Eröffnung neuer Standorte in München, Hamburg, Köln, Frankfurt und Leipzig können wir nun in ganz Deutschland qualitativ hochwertige Beförderungsdienste anbieten.",
+      "Im Oktober 2021 nahm Ibrahim Coban an einer Schulung der BG Verkehr teil, um seine Kompetenz im Bereich der Beförderung mobilitätseingeschränkter Personen weiter zu professionalisieren und höchste Sicherheitsstandards zu gewährleisten.",
+  },
+  {
+    year: 2022,
+    title: "Etablierung der Mobilitätsunterstützung vom Fahrzeug bis hin zur Wohnungstür",
+    description:
+      "Wir haben die Mobilitätsunterstützung mit Treppensteiger und Liften eingeführt, um Kunden, vom Fahrzeug bis hin zur Wohnungstür begleiten zu können.",
+    details:
+      "Für Sie als Nutzer bedeutet dies einen äußerst angenehmen und erschütterungsarmen Steigvorgang. Wir begleiten Sie dabei, die Treppen zu nehmen und die Treppensteiger zu bedienen.",
   },
 ];
 

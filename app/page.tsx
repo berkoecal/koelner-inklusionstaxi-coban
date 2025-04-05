@@ -8,6 +8,7 @@ import ContactForm from "./components/ContactForm";
 import NewsletterSubscribe from "./components/NewsletterSubscribe";
 import AboutUs from "./components/AboutUs";
 import Services from "./components/Services";
+import ExtraServices from "./components/ExtraServices";
 import Testimonials from "./components/Testimonials";
 
 export default function Home() {
@@ -17,6 +18,9 @@ export default function Home() {
       <ServiceHighlight />
       <div id='services'>
         <Services />
+      </div>
+      <div id='extra-services'>
+        <ExtraServices />
       </div>
       <FeatureCarousel />
       {/* <PortfolioGrid /> */}

@@ -9,21 +9,21 @@ const testimonials = [
       "Kölner Inklusionstaxi hat mein Leben verändert. Dank ihres zuverlässigen Services kann ich wieder regelmäßig meine Therapietermine wahrnehmen.",
     author: "Maria Schmidt",
     position: "Stammkundin seit 2019",
-    image: "/placeholder.svg?height=100&width=100",
+    image: "/person-1.jpeg",
   },
   {
     quote:
       "Als Pflegeheim schätzen wir die Professionalität und Pünktlichkeit vom Kölner Inklusionstaxi. Unsere Bewohner fühlen sich stets sicher und gut betreut.",
-    author: "Thomas Weber",
-    position: "Leiter Seniorenresidenz Sonnenhof",
-    image: "/placeholder.svg?height=100&width=100",
+    author: "Alexandra Weber",
+    position: "Leiterin Seniorenresidenz",
+    image: "/person-2.jpeg",
   },
   {
     quote:
       "Die Fahrer sind immer freundlich und hilfsbereit. Besonders beeindruckt hat mich, wie geduldig sie mit meinem Vater umgehen, der an Demenz leidet.",
     author: "Sabine Müller",
     position: "Angehörige",
-    image: "/placeholder.svg?height=100&width=100",
+    image: "/person-3.jpeg",
   },
 ];
 
@@ -51,7 +51,7 @@ export default function Testimonials() {
               <p className='text-gray-300 mb-4'>"{testimonial.quote}"</p>
               <div className='flex items-center'>
                 <Image
-                  src={testimonial.image || "/placeholder.svg"}
+                  src={testimonial.image || "/person-1.jpeg"}
                   alt={testimonial.author}
                   width={50}
                   height={50}

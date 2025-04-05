@@ -1,15 +1,22 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { motion } from "framer-motion"
-import { useForm } from "react-hook-form"
-import { zodResolver } from "@hookform/resolvers/zod"
-import * as z from "zod"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Button } from "@/components/ui/button"
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
-import { toast } from "@/components/ui/use-toast"
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import * as z from "zod";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Button } from "@/components/ui/button";
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
+import { toast } from "@/components/ui/use-toast";
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -21,10 +28,10 @@ const formSchema = z.object({
   message: z.string().min(10, {
     message: "Message must be at least 10 characters.",
   }),
-})
+});
 
 export default function Contact() {
-  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -33,27 +40,27 @@ export default function Contact() {
       email: "",
       message: "",
     },
-  })
+  });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    setIsSubmitting(true)
+    setIsSubmitting(true);
     // Simulate API call
     setTimeout(() => {
-      console.log(values)
-      setIsSubmitting(false)
+      console.log(values);
+      setIsSubmitting(false);
       toast({
         title: "Message sent!",
         description: "We'll get back to you as soon as possible.",
-      })
-      form.reset()
-    }, 2000)
+      });
+      form.reset();
+    }, 2000);
   }
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
-      <div className="container mx-auto max-w-md">
+    <section className='py-20 px-4 sm:px-6 lg:px-8 bg-gray-50'>
+      <div className='container mx-auto max-w-md'>
         <motion.h2
-          className="text-4xl font-bold mb-8 text-center text-gray-900"
+          className='text-4xl font-bold mb-8 text-center text-gray-900'
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -61,21 +68,21 @@ export default function Contact() {
           Kontaktieren Sie uns
         </motion.h2>
         <motion.div
-          className="bg-white p-8 rounded-2xl shadow-lg"
+          className='bg-white p-8 rounded-2xl shadow-lg'
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+            <form onSubmit={form.handleSubmit(onSubmit)} className='space-y-6'>
               <FormField
                 control={form.control}
-                name="name"
+                name='name'
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel>Name</FormLabel>
                     <FormControl>
-                      <Input placeholder="Max Mustermann" {...field} />
+                      <Input placeholder='Max Mustermann' {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -83,12 +90,12 @@ export default function Contact() {
               />
               <FormField
                 control={form.control}
-                name="email"
+                name='email'
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel>E-Mail</FormLabel>
                     <FormControl>
-                      <Input placeholder="max@beispiel.de" {...field} />
+                      <Input placeholder='max@beispiel.de' {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -96,14 +103,14 @@ export default function Contact() {
               />
               <FormField
                 control={form.control}
-                name="message"
+                name='message'
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel>Nachricht</FormLabel>
                     <FormControl>
                       <Textarea
-                        placeholder="Teilen Sie uns Details zu Ihrem Transportbedarf mit..."
-                        className="min-h-[120px]"
+                        placeholder='Teilen Sie uns Details zu Ihrem Transportbedarf mit...'
+                        className='min-h-[120px]'
                         {...field}
                       />
                     </FormControl>
@@ -111,7 +118,7 @@ export default function Contact() {
                   </FormItem>
                 )}
               />
-              <Button type="submit" className="w-full" disabled={isSubmitting}>
+              <Button type='submit' className='w-full' disabled={isSubmitting}>
                 {isSubmitting ? "Wird gesendet..." : "Nachricht senden"}
               </Button>
             </form>
@@ -119,6 +126,5 @@ export default function Contact() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
-

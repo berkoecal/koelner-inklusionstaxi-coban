@@ -10,6 +10,7 @@ import AboutUs from "./components/AboutUs";
 import Services from "./components/Services";
 import ExtraServices from "./components/ExtraServices";
 import Testimonials from "./components/Testimonials";
+import CookieConsent from "./components/CookieConsent";
 
 export default function Home() {
   return (
@@ -34,6 +35,7 @@ export default function Home() {
         <ContactForm />
       </div>
       {/* <NewsletterSubscribe /> */}
+      <CookieConsent />
     </>
   );
 }

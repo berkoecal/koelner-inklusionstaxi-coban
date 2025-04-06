@@ -77,7 +77,7 @@ export default function Hero() {
       {/* Brand Banner Section */}
       <div className='py-12 bg-muted/30'>
         <div className='max-w-7xl mx-auto px-6 lg:px-8'>
-          <h2 className='text-center text-xl md:text-2xl lg:text-3xl font-semibold text-muted-foreground mb-8'>
+          <h2 className='text-center text-xl md:text-2xl lg:text-3xl font-semibold text-foreground mb-8'>
             Bekannt aus
           </h2>
           <div className='overflow-hidden'>
